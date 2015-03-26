@@ -8,5 +8,8 @@ require "./key-bindings"
 
 projectPaths = window.location.hash.substr(1).split(':')
 for projectPath in projectPaths
-  specPaths = glob.sync(path.join(projectPath, 'spec', '**', '*-spec.@(js|coffee)'))
-  require(specPath) for specPath in specPaths
+  for helperPath in glob.sync(path.join(projectPath, 'spec', '**', '*-helper?(s).@(js|coffee)'))
+    require(helperPath)
+
+  for specPath in glob.sync(path.join(projectPath, 'spec', '**', '*-spec.@(js|coffee)'))
+    require(specPath)
