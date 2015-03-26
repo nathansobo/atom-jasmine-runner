@@ -1,9 +1,4 @@
 module.exports =
-  config:
-    scriptRelativePath:
-      type: 'string'
-      default: ''
-
   activate: ->
     atom.commands.add "atom-workspace", "jasmine-runner:run-specs", ->
       remote = require 'remote'
