@@ -1,0 +1,16 @@
+{
+  "name": "jasmine-runner",
+  "main": "./lib/main",
+  "version": "0.0.0",
+  "description": "Run specs with Jasmine 2.0 in a node-enabled browser window.",
+  "repository": "https://github.com/atom/atom-jasmine-runner",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "dependencies": {
+    "coffee-script": "^1.9.1",
+    "glob": "^5.0.3",
+    "jasmine-core": "^2.2.0"
+  }
+}
