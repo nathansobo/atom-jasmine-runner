@@ -12,4 +12,3 @@ module.exports =
       runnerWindow = new BrowserWindow(width: 800, height: 600)
       projectPaths = atom.project.getPaths().join(':')
       runnerWindow.loadUrl("file://#{require.resolve("./index.html")}##{projectPaths}")
-      runnerWindow.openDevTools()
