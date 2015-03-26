@@ -1,5 +1,11 @@
-# js-runner package
+# jasmine-runner
 
-A short description of your package.
+This package runs Jasmine 2.0 specs in a node-enabled browser window.
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+
+* Run specs via the`jasmine-runner:run-specs` command.
+* Specs are required by evaluating the glob pattern `spec/**/-spec.js`
+  relative to every directory in the current project. Also works for `.coffee`
+  files.
+
+![Screenshot](https://cloud.githubusercontent.com/assets/1789/6840400/fc6f27a8-d33c-11e4-9faf-47f25c480b26.png)
